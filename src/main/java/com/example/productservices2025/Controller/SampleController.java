@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/say")
 public class SampleController {
 
-    /// localhost:8080/say/hello/scaler
     @GetMapping("/hello/{name}/{times}")
     public String sayHello(@PathVariable("name") String name,
                            @PathVariable("times") int times) {
